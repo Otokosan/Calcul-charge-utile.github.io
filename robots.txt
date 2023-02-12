@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://Otokosan.github.io/Calcul-charge-utile.github.io/sitemap.xml
