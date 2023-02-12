@@ -4,6 +4,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
+  background-size: cover;
+  background-image: url("./camions.jpg");
 }
 
 h1,
