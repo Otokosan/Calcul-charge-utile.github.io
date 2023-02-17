@@ -8,18 +8,17 @@
     <h1>TRACTEUR + SEMI-REMORQUE<h1>
     <div class="input-container">
       <label for="pvt-input">Poids à vide du tracteur (G1) :</label>
-      <input type="text" id="pvt-input" required> 
+      <input type="text" id="pvt-input" placeholder="Kg" required> 
     </div>
     <div class="input-container">
       <label for="pvr-input">Poids à vide de la remorque (G2) :</label>
-      <input type="text" id="pvr-input" required>
+      <input type="text" id="pvr-input" placeholder="Kg" required>
     </div>
     <div class="input-container">
       <label for="ptacr-input">PTAC de la remorque (F2) :</label>
-      <input type="text" id="ptacr-input" required>
+      <input type="text" id="ptacr-input" placeholder="Kg" required>
     </div>
     <button id="calculate-button">Calculer</button>
-    <br>
     <h3>RESULTATS</h3>
     <div class="output-container">
       <label for="pma-output">PMA :</label>
@@ -33,7 +32,9 @@
       <label for="ptac-output">PTAC :</label>
       <input type="text" id="ptac-output" readonly>
     </div>
-    <button id="reset-button">Réinitialiser</button>
+	<div id="reset-button-container">
+    <button id="reset-button">Reset</button>
+    </div>
     <script src="script2.js"></script>
   </body>
 </html>
