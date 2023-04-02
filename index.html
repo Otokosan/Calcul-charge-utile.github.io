@@ -1,53 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>CALCULATRICE DE CHARGE UTILE</title>
-  <style>
-  
-/* Reset the default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-}
-
-.container {
-  overflow: hidden;
-  float: left;
-  width: 50%;
-  height: 850px;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-iframe {
-  width: 100%;
-  height: 100%;
-}
-
-.title {
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 2px;
-  font-family: 'Arial', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding: 10px 20px;
-  border-radius: 20px;
-}
-
-  </style>
+  <title>CALCULATRICE DE CHARGE UTILE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-<h1 class="title">CALCUL DE LA CHARGE UTILE</h1>
-  <div class="container">
+<nav>
+<div class="nav-wrapper">
+<a href="#" class="brand-logo center">CALCUL DE LA CHARGE UTILE</a>
+<ul id="nav-mobile" class="left hide-on-med-and-down">
+<li><a href="#cu2">Tracteur + Semi-Remorque</a></li>
+<li><a href="#cu31">Voitures et Porteurs</a></li>
+</ul>
+</div>
+</nav>
+
+<div class="container-wrapper">
+  <div class="container" id="cu2">
+    <h2 class="title">Tracteur + Semi-Remorque</h2>
     <iframe src="CU2.html"></iframe>
   </div>
-  <div class="container">
+
+  <div class="container" id="cu31">
+    <h2 class="title">Voitures et Porteurs</h2>
     <iframe src="CU31.html"></iframe>
   </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
