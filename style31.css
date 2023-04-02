@@ -1,63 +1,79 @@
-/* styles pour le titre principal */
-h1 {
-  font-size: 32px;
-  text-align: center;
-  color: #1E88E5;
-}
-
-/* styles pour les étiquettes */
-label {
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  color: #1E88E5;
-}
-
-/* styles pour les champs de formulaire */
-.form-control {
-  text-align: center;
-  width: 100%;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 5px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
-}
-
-/* styles pour les boutons */
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-  color: #fff;
-  background-color: #007bff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn-primary {
-  background-color: #007bff;
-}
-
-.btn-danger {
-  background-color: #dc3545;
-}
-
-/* styles pour la zone de résultat */
-.result {
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  color: #1E88E5;
-  margin-top: 20px;
-}
-
-/* centrer les éléments dans le corps du document */
 body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+label {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid #4CAF50;
+  text-align: center;
+}
 
+.calculator {
+    display:flex; 
+    justify-content:center;
+    margin-bottom:20px; 
+}
+
+button {
+    display:inline-block; 
+    padding:10px 20px; 
+    margin:0px; 
+    font-size:18px; 
+    font-weight:bold; 
+    text-align:center; 
+    color:#fff; 
+    background-color:#007bff; 
+    border:none; 
+    border-radius:5px; 
+    cursor:pointer; 
+}
+
+#calculate {
+    background-color:#007bff;
+	margin: 0 5px;
+}
+
+#calculate:hover {
+    background-color:#0069d9; 
+}
+
+#reset {
+    background-color:#dc3545;
+	margin: 0 5px;
+}
+
+#reset:hover {
+    background-color:#C62828; 
+}
+
+.result {
+    font-size:24px; 
+    font-weight:bold; 
+    text-align:center; 
+}
