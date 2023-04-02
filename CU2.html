@@ -2,39 +2,36 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="stylesheet" href="style2.css">
   </head>
   <body>
-    <h1>TRACTEUR + SEMI-REMORQUE<h1>
-    <div class="input-container">
-      <label for="pvt-input">POIDS A VIDE DU TRACTEUR (G1) :</label>
-      <input type="text" id="pvt-input" placeholder="Kg" required> 
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="pvt-input">POIDS A VIDE DU TRACTEUR (G1) :</label>
+          <input type="text" class="form-control" id="pvt-input" placeholder="Kg" required> 
+        </div>
+        <div class="form-group">
+          <label for="pvr-input">POIDS A VIDE DE LA REMORQUE (G2) :</label>
+          <input type="text" class="form-control" id="pvr-input" placeholder="Kg" required>
+        </div>
+        <div class="form-group">
+          <label for="ptacr-input">PTAC DE LA REMORQUE (F2) :</label>
+          <input type="text" class="form-control" id="ptacr-input" placeholder="Kg" required>
+        </div>
+        <div class="d-flex justify-content-center my-4">
+            <button type="submit" class="btn btn-primary mx-2" id="calculate-button">Calculer</button>
+            <button type="reset" class="btn btn-danger mx-2" id="reset-button">Reset</button>
+        </div>
+      </form>
+      <div class="output-container text-center my-4">
+        <p class="result h3">PMA :<span id="pma-output"></span> kg</p>
+        <p class="result h3">CU :<span id="cu-output"></span> kg</p>
+        <p class="result h3">PTAC :<span id="ptac-output"></span> kg</p>
+      </div>
     </div>
-    <div class="input-container">
-      <label for="pvr-input">POIDS A VIDE DE LA REMORQUE (G2) :</label>
-      <input type="text" id="pvr-input" placeholder="Kg" required>
-    </div>
-    <div class="input-container">
-      <label for="ptacr-input">PTAC DE LA REMORQUE (F2) :</label>
-      <input type="text" id="ptacr-input" placeholder="Kg" required>
-    </div>
-    <button id="calculate-button">Calculer</button>
-    <h3>RESULTATS</h3>
-    <div class="output-container">
-      <label for="pma-output">PMA :</label>
-      <input type="text" id="pma-output" readonly>
-    </div>
-    <div class="output-container">
-      <label for="cu-output">CU :</label>
-      <input type="text" id="cu-output" readonly>
-    </div>
-    <div class="output-container">
-      <label for="ptac-output">PTAC :</label>
-      <input type="text" id="ptac-output" readonly>
-    </div>
-	<div id="reset-button-container">
-    <button id="reset-button">Reset</button>
-    </div>
+
+    <!-- Le code JavaScript reste le même -->
     <script src="script2.js"></script>
   </body>
 </html>
