@@ -1,86 +1,81 @@
-* {
-  box-sizing: border-box;
+body {
   font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  font-size: 22px;
   text-align: center;
-  color: #1E88E5;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px;
 }
 
-.input-container {
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.d-flex {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
+  justify-content: center;
 }
 
-label {
-  font-size: 16px;
+.form-group label {
+  display: block;
+  font-size: 20px;
   margin-bottom: 10px;
-  font-weight: bold;
-  color: #1E88E5;
-}
-
-input[type="text"] {
   text-align: center;
-  width: 100%;
-  padding: 10px;
-  font-size: 18px;
-  border-radius: 5px;
-  box-sizing: border-box;
 }
 
-button {
-  font-size: 16px;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
+.form-group input[type="text"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
   border: none;
-  transition: background-color 0.3s ease;
-  width: 150px;
+  border-bottom: 2px solid #4CAF50;
+  text-align: center;
+}
+
+.d-flex button {
+    display:inline-block; 
+    padding:10px 20px; 
+    margin:0px; 
+    font-size:18px; 
+    font-weight:bold; 
+    text-align:center; 
+    color:#fff; 
+    background-color:#007bff; 
+    border:none; 
+    border-radius:5px; 
+    cursor:pointer; 
 }
 
 #calculate-button {
-  background-color: #1E88E5;
-  color: #fff;
+    background-color:#007bff; 
+	margin: 0 5px;
 }
 
 #calculate-button:hover {
-  background-color: #1565C0;
+    background-color:#0069d9; 
 }
 
 #reset-button {
-  background-color: #F44336;
-  color: #fff;
+    background-color:#dc3545;
+	margin: 0 5px;
 }
 
 #reset-button:hover {
-  background-color: #C62828;
+    background-color:#C62828; 
 }
 
-h3 {
-  text-align: center;
-  font-size: 24px;
-  color: #1E88E5;
+.result {
+    font-size:24px; 
+    font-weight:bold; 
+    text-align:center; 
 }
-
-.output-container {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: 10px;
-}
-
-#pma-output, #cu-output, #ptac-output {
-  padding: 12px;
-  font-size: 26px;
-  border-radius: 5px;
-  text-align: center;
-  width: 100%;
-}
-
-#reset-button-container {
-  margin-top: 10px;
-  text-align: center;
+.result span {
+  padding-left: 5px;
 }
