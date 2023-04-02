@@ -7,27 +7,28 @@ const pmaOutput = document.querySelector("#pma-output");
 const cuOutput = document.querySelector("#cu-output");
 const ptacOutput = document.querySelector("#ptac-output");
 
-function calculatePayload() {
-const pvt = Number(pvtInput.value);
-const pvr = Number(pvrInput.value);
-const ptacr = Number(ptacrInput.value);
+function calculatePayload(event) {
+    event.preventDefault();
+    const pvt = Number(pvtInput.value);
+    const pvr = Number(pvrInput.value);
+    const ptacr = Number(ptacrInput.value);
 
-const pma = pvt + ptacr;
-const cu = pma - (pvt + pvr);
-const ptac = cu + pvt + pvr;
+    const pma = pvt + ptacr;
+    const cu = pma - (pvt + pvr);
+    const ptac = cu + pvt + pvr;
 
-pmaOutput.value = pma;
-cuOutput.value = cu;
-ptacOutput.value = ptac;
+    pmaOutput.textContent = pma;
+    cuOutput.textContent = cu;
+    ptacOutput.textContent = ptac;
 }
 
 function resetDisplay() {
-pvtInput.value = "";
-pvrInput.value = "";
-ptacrInput.value = "";
-pmaOutput.value = "";
-cuOutput.value = "";
-ptacOutput.value = "";
+    pvtInput.value = "";
+    pvrInput.value = "";
+    ptacrInput.value = "";
+    pmaOutput.textContent = "";
+    cuOutput.textContent = "";
+    ptacOutput.textContent = "";
 }
 
 calculateButton.addEventListener("click", calculatePayload);
